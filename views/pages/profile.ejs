@@ -1,0 +1,14 @@
+<!-- <button><a href="/logout">Logout</a></button> -->
+
+<h1>Name: <%= user.displayName %></h1>
+
+<h3>Email: <%= user.emails[0].value %></h3>
+<!-- Use user.emails[0].value to access the email -->
+
+<p><b>Facebook id: <%= user.id %></b></p>
+
+<img
+  src="https://graph.facebook.com/<%= user.id %>/picture?type=large"
+  alt="Profile Picture"
+/>
+<!-- <img src="<%= user.photos[0].value %>" alt="Profile Picture" /> -->
